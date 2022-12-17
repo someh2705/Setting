@@ -1,2 +1,2 @@
-# Ere
-Eternal Return
+# Setting
+Android Setting Project

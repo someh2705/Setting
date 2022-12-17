@@ -1,4 +1,4 @@
-package com.someh.ere
+package com.someh.setting
 
 import org.junit.Test
 

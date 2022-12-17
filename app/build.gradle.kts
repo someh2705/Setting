@@ -1,13 +1,13 @@
 plugins {
-    id("ere.android.application")
-    id("ere.android.application.compose")
+    id("setting.android.application")
+    id("setting.android.application.compose")
 }
 
 android {
-    namespace = "com.someh.ere"
+    namespace = "com.someh.setting"
 
     defaultConfig {
-        applicationId = "com.someh.ere"
+        applicationId = "com.someh.setting"
         versionCode = 1
         versionName = "1.0"
 
@@ -31,17 +31,10 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:ui"))
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.compose.material3)
-    implementation(libs.androidx.compose.ui.ui)
-    implementation(libs.androidx.compose.ui.tooling.preview)
-    testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.compose.ui.test)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.androidx.test.espresso.core)
-    debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 }

@@ -1,4 +1,4 @@
-package com.someh.ere
+package com.someh.setting
 
 import com.android.build.api.dsl.CommonExtension
 import org.gradle.api.Project

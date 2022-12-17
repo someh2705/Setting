@@ -1,4 +1,4 @@
-package com.someh.ere.ui.theme
+package com.someh.setting.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

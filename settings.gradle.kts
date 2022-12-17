@@ -15,5 +15,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Ere"
+rootProject.name = "Setting"
 include(":app")
+include(":core:ui")
+include(":feature:main")
