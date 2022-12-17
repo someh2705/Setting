@@ -36,5 +36,9 @@ gradlePlugin {
             id = "setting.android.feature"
             implementationClass = "AndroidFeatureConventionPlugin"
         }
+        register("androidHilt") {
+            id = "setting.android.hilt"
+            implementationClass = "AndroidHiltConventionPlugin"
+        }
     }
 }
