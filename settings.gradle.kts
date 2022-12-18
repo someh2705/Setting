@@ -17,5 +17,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "Setting"
 include(":app")
+
 include(":core:ui")
+include(":core:design")
+
 include(":feature:main")

@@ -35,6 +35,7 @@ dependencies {
     implementation(project(":feature:main"))
 
     implementation(project(":core:ui"))
+    implementation(project(":core:design"))
 
     implementation(libs.androidx.hilt.navigation.compose)
 

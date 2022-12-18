@@ -1,4 +1,4 @@
-package com.someh.setting.ui.theme
+package com.someh.setting.core.design.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

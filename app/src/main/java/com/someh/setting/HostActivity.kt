@@ -7,8 +7,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import com.someh.setting.core.design.theme.SettingTheme
 import com.someh.setting.ui.SettingApp
-import com.someh.setting.ui.theme.SettingTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
