@@ -13,6 +13,7 @@ dependencies {
     compileOnly(libs.android.gradle.plugin)
     compileOnly(libs.kotlin.gradle.plugin)
     compileOnly(libs.detekt.gradle.plugin)
+    compileOnly(libs.dokka.gradle.plugin)
 }
 
 gradlePlugin {
@@ -48,6 +49,10 @@ gradlePlugin {
         register("androidComposeDetekt") {
             id = "setting.android.detekt.compose"
             implementationClass = "AndroidDetektComposeConventionPlugin"
+        }
+        register("androidDokka") {
+            id = "setting.android.dokka"
+            implementationClass = "AndroidDokkaConventionPlugin"
         }
     }
 }

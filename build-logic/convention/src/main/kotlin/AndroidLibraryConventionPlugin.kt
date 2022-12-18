@@ -15,6 +15,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
                 apply("com.android.library")
                 apply("org.jetbrains.kotlin.android")
                 apply("setting.android.detekt")
+                apply("setting.android.dokka")
             }
 
             extensions.configure<LibraryExtension> {

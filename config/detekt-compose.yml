@@ -1,3 +1,6 @@
+config:
+  warningsAsErrors: true
+
 complexity:
   LongParameterList:
     ignoreDefaultParameters: true
