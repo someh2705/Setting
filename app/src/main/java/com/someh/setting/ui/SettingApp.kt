@@ -11,6 +11,5 @@ fun SettingApp(
 
     SettingNavHost(
         navController = appState.navController,
-        onBackClick = appState::onBackClick
     )
 }

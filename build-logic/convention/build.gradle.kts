@@ -10,8 +10,9 @@ java {
 }
 
 dependencies {
-    compileOnly(libs.android.gradlePlugin)
-    compileOnly(libs.kotlin.gradlePlugin)
+    compileOnly(libs.android.gradle.plugin)
+    compileOnly(libs.kotlin.gradle.plugin)
+    compileOnly(libs.detekt.gradle.plugin)
 }
 
 gradlePlugin {
@@ -39,6 +40,10 @@ gradlePlugin {
         register("androidHilt") {
             id = "setting.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
+        }
+        register("androidComposeDetekt") {
+            id = "setting.android.detekt.compose"
+            implementationClass = "AndroidDetektComposeConventionPlugin"
         }
     }
 }

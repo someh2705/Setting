@@ -23,9 +23,4 @@ fun rememberSettingAppState(
 class SettingAppState(
     val navController: NavHostController,
     val coroutineScope: CoroutineScope
-) {
-
-    fun onBackClick() {
-        navController.popBackStack()
-    }
-}
+)
