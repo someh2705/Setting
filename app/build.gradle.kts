@@ -1,6 +1,7 @@
 plugins {
     id("setting.android.application")
     id("setting.android.application.compose")
+    id("setting.android.hilt")
 }
 
 android {
@@ -31,7 +32,11 @@ android {
 }
 
 dependencies {
+    implementation(project(":feature:main"))
+
     implementation(project(":core:ui"))
+
+    implementation(libs.androidx.hilt.navigation.compose)
 
     androidTestImplementation(libs.androidx.compose.ui.test)
     androidTestImplementation(libs.androidx.test.ext.junit)
