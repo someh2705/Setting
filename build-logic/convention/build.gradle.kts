@@ -41,6 +41,10 @@ gradlePlugin {
             id = "setting.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
+        register("androidDetekt") {
+            id = "setting.android.detekt"
+            implementationClass = "AndroidDetektConventionPlugin"
+        }
         register("androidComposeDetekt") {
             id = "setting.android.detekt.compose"
             implementationClass = "AndroidDetektComposeConventionPlugin"

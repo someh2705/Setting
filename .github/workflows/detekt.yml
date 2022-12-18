@@ -27,4 +27,4 @@ jobs:
         run: chmod +x gradlew
 
       - name: Check Detekt
-        run: ./gradlew detekt
+        run: ./gradlew detekt.yml

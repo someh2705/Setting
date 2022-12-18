@@ -5,7 +5,7 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.withType
 
-class AndroidDetektComposeConventionPlugin : Plugin<Project> {
+class AndroidDetektConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
@@ -15,7 +15,7 @@ class AndroidDetektComposeConventionPlugin : Plugin<Project> {
             extensions.configure<DetektExtension> {
                 buildUponDefaultConfig = true
                 allRules = false
-                config = files("$rootDir/config/detekt.yml", "$rootDir/config/detekt-compose.yml")
+                config = files("$rootDir/config/detekt.yml")
             }
 
             tasks.withType<Detekt>().configureEach {
