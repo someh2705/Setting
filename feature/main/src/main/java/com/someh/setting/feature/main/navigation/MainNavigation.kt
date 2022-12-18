@@ -6,13 +6,13 @@ import androidx.navigation.NavOptions
 import androidx.navigation.compose.composable
 import com.someh.setting.feature.main.MainRoute
 
-const val MainNavigationRoute = "main_route"
+public const val MainNavigationRoute: String = "main_route"
 
-fun NavController.navigateToMain(navOptions: NavOptions? = null) {
+public fun NavController.navigateToMain(navOptions: NavOptions? = null) {
     this.navigate(MainNavigationRoute, navOptions)
 }
 
-fun NavGraphBuilder.mainScreen() {
+public fun NavGraphBuilder.mainScreen() {
     composable(route = MainNavigationRoute) {
         MainRoute()
     }

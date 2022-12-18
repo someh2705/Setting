@@ -12,7 +12,7 @@ import com.someh.setting.ui.SettingApp
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class HostActivity : ComponentActivity() {
+internal class HostActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

@@ -22,8 +22,11 @@ internal fun Project.configureKotlinAndroid(
         }
 
         kotlinOptions {
+            allWarningsAsErrors = true
+
             freeCompilerArgs = freeCompilerArgs + listOf(
-                "-Xcontext-receivers"
+                "-Xcontext-receivers",
+                "-Xexplicit-api=strict"
             )
 
             jvmTarget = "${JavaVersion.VERSION_1_8}"

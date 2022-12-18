@@ -15,7 +15,7 @@ class AndroidDetektConventionPlugin : Plugin<Project> {
             extensions.configure<DetektExtension> {
                 buildUponDefaultConfig = true
                 allRules = false
-                config = files("$rootDir/config/detekt-base.yml")
+                config = files("$rootDir/config/detekt.yml")
             }
 
             tasks.withType<Detekt>().configureEach {

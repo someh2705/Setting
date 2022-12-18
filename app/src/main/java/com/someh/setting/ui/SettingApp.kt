@@ -5,7 +5,7 @@ import androidx.navigation.compose.NavHost
 import com.someh.setting.navigation.SettingNavHost
 
 @Composable
-fun SettingApp(
+internal fun SettingApp(
     appState: SettingAppState = rememberSettingAppState()
 ) {
 

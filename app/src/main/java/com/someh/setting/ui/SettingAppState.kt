@@ -10,7 +10,7 @@ import kotlinx.coroutines.CoroutineScope
 
 
 @Composable
-fun rememberSettingAppState(
+internal fun rememberSettingAppState(
     navController: NavHostController = rememberNavController(),
     coroutineScope: CoroutineScope = rememberCoroutineScope(),
 ): SettingAppState {
@@ -20,7 +20,7 @@ fun rememberSettingAppState(
 }
 
 @Stable
-class SettingAppState(
-    val navController: NavHostController,
-    val coroutineScope: CoroutineScope
+internal class SettingAppState(
+    internal val navController: NavHostController,
+    internal val coroutineScope: CoroutineScope
 )

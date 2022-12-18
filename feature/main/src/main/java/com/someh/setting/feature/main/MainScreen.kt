@@ -8,25 +8,25 @@ import com.someh.setting.core.design.theme.SettingTheme
 
 
 @Composable
-fun MainRoute() {
+public fun MainRoute() {
 
     MainScreen()
 }
 
 @Composable
-fun MainScreen() {
+internal fun MainScreen() {
     Greeting(name = "Setting")
 }
 
 @Composable
-fun Greeting(name: String) {
+internal fun Greeting(name: String) {
     Text(text = "Hello $name!")
 }
 
 
 @Preview
 @Composable
-fun MainScreenPreview() {
+internal fun MainScreenPreview() {
     SettingTheme {
         MainScreen()
     }

@@ -3,6 +3,7 @@
   <component name="DetektPluginSettings">
     <option name="configurationFilePaths">
       <set>
+        <option value="$PROJECT_DIR$/config/detekt-base.yml" />
         <option value="$PROJECT_DIR$/config/detekt-compose.yml" />
       </set>
     </option>

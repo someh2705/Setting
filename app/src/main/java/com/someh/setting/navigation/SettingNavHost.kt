@@ -8,7 +8,7 @@ import com.someh.setting.feature.main.navigation.MainNavigationRoute
 import com.someh.setting.feature.main.navigation.mainScreen
 
 @Composable
-fun SettingNavHost(
+internal fun SettingNavHost(
     navController: NavHostController,
     modifier: Modifier = Modifier,
     startDestination: String = MainNavigationRoute
